@@ -4,9 +4,9 @@ gem 'rails', '~> 3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 gem 'pg'
-
+gem 'kaminari'
+gem 'cache_digests'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -23,6 +23,7 @@ gem 'jquery-rails'
 gem 'faker'
 
 group :development, :test do
+  gem 'rack-mini-profiler'
   gem 'rspec-rails'
   gem 'pry-rails'
   gem 'pry-doc'

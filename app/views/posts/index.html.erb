@@ -1,7 +1,8 @@
 <h1>Ivan the Terrible's Blog</h1>
 
+<%# paginate @posts %>
 <section class="blog">
-  <%= render @posts %>
+  <%= render @posts, :inline => true %>
 </section>
 
 <br />
